@@ -12,6 +12,7 @@ authors:
     affiliation: "Artificial Intelligence Finance Institute; Courant Institute, NYU"
     # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add your ORCID
 year: 2026
+doi: "10.5281/zenodo.21038235"
 repository-code: "https://github.com/<user>/performative-discovery"
 keywords:
   - performative prediction

@@ -1,10 +1,7 @@
 # Performative Stability in Signal Discovery
 
-<!-- After your first Zenodo release, replace the line below with the badge
-     Zenodo gives you (Settings -> the DOI badge), e.g.:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
-[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey.svg)](https://doi.org/)
+<!-- Zenodo concept DOI (always resolves to the latest version) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21038235.svg)](https://doi.org/10.5281/zenodo.21038235)
 
 Replication code for **"Performative Stability in Signal Discovery: Deployment,
 Crowding, and the Decay–Revival Cycle"** by Alejandro Rodríguez Domínguez and
@@ -98,7 +95,9 @@ benchmark.
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Please also cite the data sources: Chen &
+See [`CITATION.cff`](CITATION.cff). This repository is archived on Zenodo with
+DOI [10.5281/zenodo.21038235](https://doi.org/10.5281/zenodo.21038235) (concept
+DOI; resolves to the latest version). Please also cite the data sources: Chen &
 Zimmermann (2020) for the anomaly data and Lou & Polk (2022) for the comomentum
 construction.
 
