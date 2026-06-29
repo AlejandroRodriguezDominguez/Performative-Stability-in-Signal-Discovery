@@ -1,0 +1,23 @@
+# data (not redistributed)
+data/*.csv
+data/*.zip
+!data/README.md
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# generated artifacts
+*.npz
+*_summary.json
+*_results.csv
+
+# latex build
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg

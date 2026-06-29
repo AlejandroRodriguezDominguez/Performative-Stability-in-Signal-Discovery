@@ -1,0 +1,39 @@
+name: reproduce-simulations
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  simulations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run synthetic experiments
+        run: |
+          python src/simulations/exp1_dichotomy.py
+          python src/simulations/exp2_phase.py
+          python src/simulations/exp3_momentum.py
+          python src/simulations/exp5_bifurcation.py
+          python src/simulations/exp6_transient.py
+      - name: Check threshold recovery (exp1)
+        run: |
+          python - <<'PY'
+          import json, glob, sys
+          f = glob.glob("**/exp1_summary.json", recursive=True)
+          if not f:
+              print("exp1_summary.json not found"); sys.exit(1)
+          s = json.load(open(f[0]))
+          err = abs(s.get("rel_error", 1.0))
+          print("exp1 rel_error =", err)
+          sys.exit(0 if err < 0.2 else 1)
+          PY

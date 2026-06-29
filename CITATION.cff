@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Performative Stability in Signal Discovery: Deployment, Crowding, and the Decay–Revival Cycle"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Rodríguez Domínguez"
+    given-names: "Alejandro"
+    affiliation: "Miralta Finance Bank S.A.; University of Reading"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add your ORCID
+  - family-names: "Noguer i Alonso"
+    given-names: "Miquel"
+    affiliation: "Artificial Intelligence Finance Institute; Courant Institute, NYU"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add your ORCID
+year: 2026
+repository-code: "https://github.com/<user>/performative-discovery"
+keywords:
+  - performative prediction
+  - alpha decay
+  - crowding
+  - quantitative finance
+  - reproducibility
